@@ -1,11 +1,12 @@
--- EyeoftheStorm v1.3
+-- EyeoftheStorm v1.4
 -- LICENSE: Creative Commons Attribution-Non-Commercial-Share Alike 3.0
 
-local Measure,Meter,OldValue,StartAngle,RotationTable={},{},{},{},{}
+local Measure,Meter,OldValue,StartAngle,RotationTable,OldBassSum={},{},{},{},{},0
 function Initialize()
 	Sub,Index,Limit=SELF:GetOption("Sub"),SKIN:ParseFormula(SELF:GetOption("Index")),SKIN:ParseFormula(SELF:GetOption("Limit"))
 	Direction,ResetAngle=SKIN:ReplaceVariables("#Direction#"),math.rad(360)
-	Constant,Sustain,Attack=SKIN:ReplaceVariables("#Constant#"),SKIN:ReplaceVariables("#Sustain#"),SKIN:ReplaceVariables("#Attack#")
+	Constant,Sustain,Attack=SKIN:ParseFormula(SKIN:ReplaceVariables("#Constant#")),SKIN:ParseFormula(SKIN:ReplaceVariables("#Sustain#")),SKIN:ParseFormula(SKIN:ReplaceVariables("#Attack#"))
+	AverageSustain,AverageAttack=SKIN:ParseFormula(SKIN:ReplaceVariables("#AverageSustain#")),SKIN:ParseFormula(SKIN:ReplaceVariables("#AverageAttack#"))
 	AngleFillMinLowFreq,AngleFillMinHighFreq=SKIN:ParseFormula(SKIN:ReplaceVariables("#AngleFillMinLowFreq#")),SKIN:ParseFormula(SKIN:ReplaceVariables("#AngleFillMinHighFreq#"))
 	AngleFillMaxLowFreq,AngleFillMaxHighFreq=SKIN:ParseFormula(SKIN:ReplaceVariables("#AngleFillMaxLowFreq#")),SKIN:ParseFormula(SKIN:ReplaceVariables("#AngleFillMaxHighFreq#"))
 	
@@ -29,16 +30,34 @@ function Initialize()
 		if Direction=="Random" then RotationTable[i]=random(0,1) end end end
 
 function Update()
-	for i=Index,Limit do 
+	local TrebleSum,BassSum=0,0
+	for i=Index,Limit do
+		local Value=Measure[i]:GetValue()
+		local TrebleValue,BassValue=Value^((Limit/i)/AverageSustain),Value^((i/Limit)/AverageAttack)
+		if TrebleValue>AverageSustain then TrebleValue=AverageSustain  end
+		if BassValue>AverageAttack then BassValue=AverageAttack end
+		
+		TrebleSum=TrebleSum+TrebleValue
+		BassSum=BassSum+BassValue
+	end
+	
+	local TrebleAvgValue,BassAvgDifference=TrebleSum,BassSum-OldBassSum
+	OldBassSum=BassSum
+	if BassAvgDifference<0 then BassAvgDifference=0 end
+	
+	for i=Index,Limit do
 		local Value,Difference=Measure[i]:GetValue(),Measure[i]:GetValue()-OldValue[i]
 		OldValue[i]=Value
-		
 		if Difference<0 then Difference=0 end
-			
+		
+		local Value,Difference=Value^((Limit/i)/Sustain),Difference^((i/Limit)/Attack)
+		if Value>Sustain then Value=Sustain end
+		if Difference>Attack then Difference=Attack end
+		
 		if RotationTable[i]==0 or Direction=="Clockwise" then
-			StartAngle[i]=(StartAngle[i] + Value^((Limit/i)/Sustain) + Difference^((i/Limit)/Attack) + Constant)%ResetAngle
+			StartAngle[i]=(StartAngle[i] + Value + Difference + TrebleAvgValue + BassAvgDifference + Constant)%ResetAngle
 		elseif RotationTable[i]==1 or Direction=="CounterClockwise" then
-			StartAngle[i]=(StartAngle[i] - Value^((Limit/i)/Sustain) - Difference^((i/Limit)/Attack) - Constant)%ResetAngle end
+			StartAngle[i]=(StartAngle[i] - Value - Difference - TrebleAvgValue - BassAvgDifference - Constant)%ResetAngle end
 		
 		SKIN:Bang("!SetOption",Meter[i],"StartAngle",StartAngle[i])
 	end

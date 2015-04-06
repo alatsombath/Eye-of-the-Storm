@@ -27,11 +27,16 @@ InvertSpectrum=0
 ; 1 = Treble inside, bass outside
 
 Constant=0.005
-; Rotation speed when no sound is playing
-Sustain=0.35
-; Rotation speed when sound level is the same
-Attack=0.7
-; Angle change intensity when sound level jumps
+; Band rotation speed when no sound is playing
+Sustain=0.3
+; Band rotation speed when sound level is the same
+Attack=0.6
+; Band angle change intensity when sound level jumps
+
+AverageSustain=0.15
+; Spectrum rotation speed when treble sound level is the same
+AverageAttack=0.3
+; Spectrum angle change intensity when bass sound level jumps
 
 AngleFillMinLowFreq=(Rad(0))
 ; Minimum angle size on no sound for lowest frequency
