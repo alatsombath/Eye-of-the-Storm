@@ -1,22 +1,27 @@
 [Variables]
-FFTAttack=350
-FFTDecay=350
-FFTSize=2048
-FreqMin=40
-FreqMax=16000
-; Audio settings
-; http://docs.rainmeter.net/manual-beta/plugins/audiolevel#FFTOptions
 
-MeasureName=MeasureAudioRepeat
-MeterName=MeterRoundlineRepeat
+; Refresh the skin after updating these settings!
+
+
+; DISPLAY
+; =======
 
 Bands=24
-Sensitivity=42
+; Number of roundlines
 
 RoundlineLength=8
+; Technically the "width" of the line
+
 RoundlineGap=4
+
 CenterOffset=0
+; Distance from the center of the eye
+
 Color=161,186,220,255
+
+
+; MECHANICS
+; =========
 
 Direction=Random
 ; Direction=Clockwise
@@ -47,3 +52,23 @@ AngleFillMaxLowFreq=(Rad(360))
 ; Maximum angle size on loudest sound for lowest frequency
 AngleFillMaxHighFreq=(Rad(180))
 ; Maximum angle size on loudest sound for highest frequency
+
+
+; AUDIO
+; =====
+
+Sensitivity=42
+; Increase this if the spectrum is not visible enough
+
+FFTAttack=350
+FFTDecay=350
+; Decrease for faster response, increase for slower response
+; http://docs.rainmeter.net/manual-beta/plugins/audiolevel#FFTAttack
+
+FFTSize=2048
+FFTOverlap=(#FFTSize#/2)
+FreqMin=40
+FreqMax=16000
+Port=Output
+; Additional audio settings
+; http://docs.rainmeter.net/manual-beta/plugins/audiolevel#FFTOptions
