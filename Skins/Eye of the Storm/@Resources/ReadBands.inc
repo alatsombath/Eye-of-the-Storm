@@ -7,7 +7,6 @@ BandIdx=Repeat
 
 [MeasureAudioMinRepeat]
 Measure=Calc
-Formula=(MeasureAudioRepeat < (#AngleFillMin#/#AngleFillMax#) ? (#AngleFillMin#/#AngleFillMax#) : MeasureAudioRepeat)
 
 [MeterRoundlineRepeat]
 Meter=Roundline

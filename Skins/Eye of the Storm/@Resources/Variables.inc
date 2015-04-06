@@ -12,23 +12,32 @@ MeterName=MeterRoundlineRepeat
 
 Bands=24
 Sensitivity=42
-InvertSpectrum=0
 
 RoundlineLength=8
 RoundlineGap=4
-
-AngleFillMin=(Rad(90))
-AngleFillMax=(Rad(180))
-
-Constant=0.01
-; Rotation speed when no sound is playing
-SustainSensitivity=0.3
-; Rotation speed when sound level is the same
-ChangeSensitivity=1.5
-; Angle change when sound level jumps
+Color=161,186,220,255
 
 Direction=Random
 ; Direction=Clockwise
 ; Direction=CounterClockwise
 
-Color=161,186,220,255
+InvertSpectrum=0
+; 0 = Bass inside, treble outside
+; 1 = Treble inside, bass outside
+
+Constant=0.01
+; Rotation speed when no sound is playing
+Sustain=0.3
+; Rotation speed when sound level is the same
+Decay=1.5
+; Angle change intensity when sound level jumps
+
+AngleFillMinLowFreq=(Rad(0))
+; Minimum angle size on no sound for lowest frequency
+AngleFillMinHighFreq=(Rad(90))
+; Minimum angle size on no sound for highest frequency
+
+AngleFillMaxLowFreq=(Rad(360))
+; Maximum angle size on loudest sound for lowest frequency
+AngleFillMaxHighFreq=(Rad(180))
+; Maximum angle size on loudest sound for highest frequency

@@ -7,7 +7,6 @@ BandIdx=1
 
 [MeasureAudioMin1]
 Measure=Calc
-Formula=(MeasureAudio1 < (#AngleFillMin#/#AngleFillMax#) ? (#AngleFillMin#/#AngleFillMax#) : MeasureAudio1)
 
 [MeterRoundline1]
 Meter=Roundline
@@ -25,7 +24,6 @@ BandIdx=2
 
 [MeasureAudioMin2]
 Measure=Calc
-Formula=(MeasureAudio2 < (#AngleFillMin#/#AngleFillMax#) ? (#AngleFillMin#/#AngleFillMax#) : MeasureAudio2)
 
 [MeterRoundline2]
 Meter=Roundline
@@ -43,7 +41,6 @@ BandIdx=3
 
 [MeasureAudioMin3]
 Measure=Calc
-Formula=(MeasureAudio3 < (#AngleFillMin#/#AngleFillMax#) ? (#AngleFillMin#/#AngleFillMax#) : MeasureAudio3)
 
 [MeterRoundline3]
 Meter=Roundline
@@ -61,7 +58,6 @@ BandIdx=4
 
 [MeasureAudioMin4]
 Measure=Calc
-Formula=(MeasureAudio4 < (#AngleFillMin#/#AngleFillMax#) ? (#AngleFillMin#/#AngleFillMax#) : MeasureAudio4)
 
 [MeterRoundline4]
 Meter=Roundline
@@ -79,7 +75,6 @@ BandIdx=5
 
 [MeasureAudioMin5]
 Measure=Calc
-Formula=(MeasureAudio5 < (#AngleFillMin#/#AngleFillMax#) ? (#AngleFillMin#/#AngleFillMax#) : MeasureAudio5)
 
 [MeterRoundline5]
 Meter=Roundline
@@ -97,7 +92,6 @@ BandIdx=6
 
 [MeasureAudioMin6]
 Measure=Calc
-Formula=(MeasureAudio6 < (#AngleFillMin#/#AngleFillMax#) ? (#AngleFillMin#/#AngleFillMax#) : MeasureAudio6)
 
 [MeterRoundline6]
 Meter=Roundline
@@ -115,7 +109,6 @@ BandIdx=7
 
 [MeasureAudioMin7]
 Measure=Calc
-Formula=(MeasureAudio7 < (#AngleFillMin#/#AngleFillMax#) ? (#AngleFillMin#/#AngleFillMax#) : MeasureAudio7)
 
 [MeterRoundline7]
 Meter=Roundline
@@ -133,7 +126,6 @@ BandIdx=8
 
 [MeasureAudioMin8]
 Measure=Calc
-Formula=(MeasureAudio8 < (#AngleFillMin#/#AngleFillMax#) ? (#AngleFillMin#/#AngleFillMax#) : MeasureAudio8)
 
 [MeterRoundline8]
 Meter=Roundline
@@ -151,7 +143,6 @@ BandIdx=9
 
 [MeasureAudioMin9]
 Measure=Calc
-Formula=(MeasureAudio9 < (#AngleFillMin#/#AngleFillMax#) ? (#AngleFillMin#/#AngleFillMax#) : MeasureAudio9)
 
 [MeterRoundline9]
 Meter=Roundline
@@ -169,7 +160,6 @@ BandIdx=10
 
 [MeasureAudioMin10]
 Measure=Calc
-Formula=(MeasureAudio10 < (#AngleFillMin#/#AngleFillMax#) ? (#AngleFillMin#/#AngleFillMax#) : MeasureAudio10)
 
 [MeterRoundline10]
 Meter=Roundline
@@ -187,7 +177,6 @@ BandIdx=11
 
 [MeasureAudioMin11]
 Measure=Calc
-Formula=(MeasureAudio11 < (#AngleFillMin#/#AngleFillMax#) ? (#AngleFillMin#/#AngleFillMax#) : MeasureAudio11)
 
 [MeterRoundline11]
 Meter=Roundline
@@ -205,7 +194,6 @@ BandIdx=12
 
 [MeasureAudioMin12]
 Measure=Calc
-Formula=(MeasureAudio12 < (#AngleFillMin#/#AngleFillMax#) ? (#AngleFillMin#/#AngleFillMax#) : MeasureAudio12)
 
 [MeterRoundline12]
 Meter=Roundline
@@ -223,7 +211,6 @@ BandIdx=13
 
 [MeasureAudioMin13]
 Measure=Calc
-Formula=(MeasureAudio13 < (#AngleFillMin#/#AngleFillMax#) ? (#AngleFillMin#/#AngleFillMax#) : MeasureAudio13)
 
 [MeterRoundline13]
 Meter=Roundline
@@ -241,7 +228,6 @@ BandIdx=14
 
 [MeasureAudioMin14]
 Measure=Calc
-Formula=(MeasureAudio14 < (#AngleFillMin#/#AngleFillMax#) ? (#AngleFillMin#/#AngleFillMax#) : MeasureAudio14)
 
 [MeterRoundline14]
 Meter=Roundline
@@ -259,7 +245,6 @@ BandIdx=15
 
 [MeasureAudioMin15]
 Measure=Calc
-Formula=(MeasureAudio15 < (#AngleFillMin#/#AngleFillMax#) ? (#AngleFillMin#/#AngleFillMax#) : MeasureAudio15)
 
 [MeterRoundline15]
 Meter=Roundline
@@ -277,7 +262,6 @@ BandIdx=16
 
 [MeasureAudioMin16]
 Measure=Calc
-Formula=(MeasureAudio16 < (#AngleFillMin#/#AngleFillMax#) ? (#AngleFillMin#/#AngleFillMax#) : MeasureAudio16)
 
 [MeterRoundline16]
 Meter=Roundline
@@ -295,7 +279,6 @@ BandIdx=17
 
 [MeasureAudioMin17]
 Measure=Calc
-Formula=(MeasureAudio17 < (#AngleFillMin#/#AngleFillMax#) ? (#AngleFillMin#/#AngleFillMax#) : MeasureAudio17)
 
 [MeterRoundline17]
 Meter=Roundline
@@ -313,7 +296,6 @@ BandIdx=18
 
 [MeasureAudioMin18]
 Measure=Calc
-Formula=(MeasureAudio18 < (#AngleFillMin#/#AngleFillMax#) ? (#AngleFillMin#/#AngleFillMax#) : MeasureAudio18)
 
 [MeterRoundline18]
 Meter=Roundline
@@ -331,7 +313,6 @@ BandIdx=19
 
 [MeasureAudioMin19]
 Measure=Calc
-Formula=(MeasureAudio19 < (#AngleFillMin#/#AngleFillMax#) ? (#AngleFillMin#/#AngleFillMax#) : MeasureAudio19)
 
 [MeterRoundline19]
 Meter=Roundline
@@ -349,7 +330,6 @@ BandIdx=20
 
 [MeasureAudioMin20]
 Measure=Calc
-Formula=(MeasureAudio20 < (#AngleFillMin#/#AngleFillMax#) ? (#AngleFillMin#/#AngleFillMax#) : MeasureAudio20)
 
 [MeterRoundline20]
 Meter=Roundline
@@ -367,7 +347,6 @@ BandIdx=21
 
 [MeasureAudioMin21]
 Measure=Calc
-Formula=(MeasureAudio21 < (#AngleFillMin#/#AngleFillMax#) ? (#AngleFillMin#/#AngleFillMax#) : MeasureAudio21)
 
 [MeterRoundline21]
 Meter=Roundline
@@ -385,7 +364,6 @@ BandIdx=22
 
 [MeasureAudioMin22]
 Measure=Calc
-Formula=(MeasureAudio22 < (#AngleFillMin#/#AngleFillMax#) ? (#AngleFillMin#/#AngleFillMax#) : MeasureAudio22)
 
 [MeterRoundline22]
 Meter=Roundline
@@ -403,7 +381,6 @@ BandIdx=23
 
 [MeasureAudioMin23]
 Measure=Calc
-Formula=(MeasureAudio23 < (#AngleFillMin#/#AngleFillMax#) ? (#AngleFillMin#/#AngleFillMax#) : MeasureAudio23)
 
 [MeterRoundline23]
 Meter=Roundline
