@@ -33,9 +33,9 @@ Sustain=0.3
 Attack=0.6
 ; Band angle change intensity when sound level jumps
 
-AverageSustain=0.15
+AverageSustain=0.1
 ; Spectrum rotation speed when treble sound level is the same
-AverageAttack=0.3
+AverageAttack=0.2
 ; Spectrum angle change intensity when bass sound level jumps
 
 AngleFillMinLowFreq=(Rad(0))
