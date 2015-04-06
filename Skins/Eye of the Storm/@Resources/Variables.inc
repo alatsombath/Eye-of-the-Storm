@@ -14,21 +14,18 @@ Bands=24
 Sensitivity=42
 InvertSpectrum=0
 
-RoundlineLength=6
-RoundlineGap=2
+RoundlineLength=8
+RoundlineGap=4
 
 AngleFillMin=(Rad(90))
-AngleFillMax=(Rad(360))
+AngleFillMax=(Rad(180))
 
-Constant=0.0125
+Constant=0.01
 ; Rotation speed when no sound is playing
-SustainSensitivity=0.1
+SustainSensitivity=0.3
 ; Rotation speed when sound level is the same
-ChangeSensitivity=5
+ChangeSensitivity=1.5
 ; Angle change when sound level jumps
-
-Regression=0
-; Rotate backwards when sound decreases
 
 Direction=Random
 ; Direction=Clockwise
