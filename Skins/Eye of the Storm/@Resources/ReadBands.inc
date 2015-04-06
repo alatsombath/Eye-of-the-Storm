@@ -12,5 +12,5 @@ Measure=Calc
 Meter=Roundline
 MeterStyle=MeterRoundline
 MeasureName=MeasureAudioMinRepeat
-LineStart=(#RoundlineLength#*(Abs([Invert]-Repeat)-1)+(#RoundlineGap#*(Abs([Invert]-Repeat)-1)))
-LineLength=(#RoundlineLength#*Abs([Invert]-Repeat)+(#RoundlineGap#*(Abs([Invert]-Repeat)-1)))
+LineStart=(#CenterOffset#+(#RoundlineLength#*(Abs([Invert]-Repeat)-1))+(#RoundlineGap#*(Abs([Invert]-Repeat)-1)))
+LineLength=(#CenterOffset#+(#RoundlineLength#*Abs([Invert]-Repeat))+(#RoundlineGap#*(Abs([Invert]-Repeat)-1)))

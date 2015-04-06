@@ -12,8 +12,8 @@ Measure=Calc
 Meter=Roundline
 MeterStyle=MeterRoundline
 MeasureName=MeasureAudioMin1
-LineStart=(#RoundlineLength#*(Abs([Invert]-1)-1)+(#RoundlineGap#*(Abs([Invert]-1)-1)))
-LineLength=(#RoundlineLength#*Abs([Invert]-1)+(#RoundlineGap#*(Abs([Invert]-1)-1)))
+LineStart=(#CenterOffset#+(#RoundlineLength#*(Abs([Invert]-1)-1))+(#RoundlineGap#*(Abs([Invert]-1)-1)))
+LineLength=(#CenterOffset#+(#RoundlineLength#*Abs([Invert]-1))+(#RoundlineGap#*(Abs([Invert]-1)-1)))
 
 [MeasureAudio2]
 Measure=Plugin
@@ -29,8 +29,8 @@ Measure=Calc
 Meter=Roundline
 MeterStyle=MeterRoundline
 MeasureName=MeasureAudioMin2
-LineStart=(#RoundlineLength#*(Abs([Invert]-2)-1)+(#RoundlineGap#*(Abs([Invert]-2)-1)))
-LineLength=(#RoundlineLength#*Abs([Invert]-2)+(#RoundlineGap#*(Abs([Invert]-2)-1)))
+LineStart=(#CenterOffset#+(#RoundlineLength#*(Abs([Invert]-2)-1))+(#RoundlineGap#*(Abs([Invert]-2)-1)))
+LineLength=(#CenterOffset#+(#RoundlineLength#*Abs([Invert]-2))+(#RoundlineGap#*(Abs([Invert]-2)-1)))
 
 [MeasureAudio3]
 Measure=Plugin
@@ -46,8 +46,8 @@ Measure=Calc
 Meter=Roundline
 MeterStyle=MeterRoundline
 MeasureName=MeasureAudioMin3
-LineStart=(#RoundlineLength#*(Abs([Invert]-3)-1)+(#RoundlineGap#*(Abs([Invert]-3)-1)))
-LineLength=(#RoundlineLength#*Abs([Invert]-3)+(#RoundlineGap#*(Abs([Invert]-3)-1)))
+LineStart=(#CenterOffset#+(#RoundlineLength#*(Abs([Invert]-3)-1))+(#RoundlineGap#*(Abs([Invert]-3)-1)))
+LineLength=(#CenterOffset#+(#RoundlineLength#*Abs([Invert]-3))+(#RoundlineGap#*(Abs([Invert]-3)-1)))
 
 [MeasureAudio4]
 Measure=Plugin
@@ -63,8 +63,8 @@ Measure=Calc
 Meter=Roundline
 MeterStyle=MeterRoundline
 MeasureName=MeasureAudioMin4
-LineStart=(#RoundlineLength#*(Abs([Invert]-4)-1)+(#RoundlineGap#*(Abs([Invert]-4)-1)))
-LineLength=(#RoundlineLength#*Abs([Invert]-4)+(#RoundlineGap#*(Abs([Invert]-4)-1)))
+LineStart=(#CenterOffset#+(#RoundlineLength#*(Abs([Invert]-4)-1))+(#RoundlineGap#*(Abs([Invert]-4)-1)))
+LineLength=(#CenterOffset#+(#RoundlineLength#*Abs([Invert]-4))+(#RoundlineGap#*(Abs([Invert]-4)-1)))
 
 [MeasureAudio5]
 Measure=Plugin
@@ -80,8 +80,8 @@ Measure=Calc
 Meter=Roundline
 MeterStyle=MeterRoundline
 MeasureName=MeasureAudioMin5
-LineStart=(#RoundlineLength#*(Abs([Invert]-5)-1)+(#RoundlineGap#*(Abs([Invert]-5)-1)))
-LineLength=(#RoundlineLength#*Abs([Invert]-5)+(#RoundlineGap#*(Abs([Invert]-5)-1)))
+LineStart=(#CenterOffset#+(#RoundlineLength#*(Abs([Invert]-5)-1))+(#RoundlineGap#*(Abs([Invert]-5)-1)))
+LineLength=(#CenterOffset#+(#RoundlineLength#*Abs([Invert]-5))+(#RoundlineGap#*(Abs([Invert]-5)-1)))
 
 [MeasureAudio6]
 Measure=Plugin
@@ -97,8 +97,8 @@ Measure=Calc
 Meter=Roundline
 MeterStyle=MeterRoundline
 MeasureName=MeasureAudioMin6
-LineStart=(#RoundlineLength#*(Abs([Invert]-6)-1)+(#RoundlineGap#*(Abs([Invert]-6)-1)))
-LineLength=(#RoundlineLength#*Abs([Invert]-6)+(#RoundlineGap#*(Abs([Invert]-6)-1)))
+LineStart=(#CenterOffset#+(#RoundlineLength#*(Abs([Invert]-6)-1))+(#RoundlineGap#*(Abs([Invert]-6)-1)))
+LineLength=(#CenterOffset#+(#RoundlineLength#*Abs([Invert]-6))+(#RoundlineGap#*(Abs([Invert]-6)-1)))
 
 [MeasureAudio7]
 Measure=Plugin
@@ -114,8 +114,8 @@ Measure=Calc
 Meter=Roundline
 MeterStyle=MeterRoundline
 MeasureName=MeasureAudioMin7
-LineStart=(#RoundlineLength#*(Abs([Invert]-7)-1)+(#RoundlineGap#*(Abs([Invert]-7)-1)))
-LineLength=(#RoundlineLength#*Abs([Invert]-7)+(#RoundlineGap#*(Abs([Invert]-7)-1)))
+LineStart=(#CenterOffset#+(#RoundlineLength#*(Abs([Invert]-7)-1))+(#RoundlineGap#*(Abs([Invert]-7)-1)))
+LineLength=(#CenterOffset#+(#RoundlineLength#*Abs([Invert]-7))+(#RoundlineGap#*(Abs([Invert]-7)-1)))
 
 [MeasureAudio8]
 Measure=Plugin
@@ -131,8 +131,8 @@ Measure=Calc
 Meter=Roundline
 MeterStyle=MeterRoundline
 MeasureName=MeasureAudioMin8
-LineStart=(#RoundlineLength#*(Abs([Invert]-8)-1)+(#RoundlineGap#*(Abs([Invert]-8)-1)))
-LineLength=(#RoundlineLength#*Abs([Invert]-8)+(#RoundlineGap#*(Abs([Invert]-8)-1)))
+LineStart=(#CenterOffset#+(#RoundlineLength#*(Abs([Invert]-8)-1))+(#RoundlineGap#*(Abs([Invert]-8)-1)))
+LineLength=(#CenterOffset#+(#RoundlineLength#*Abs([Invert]-8))+(#RoundlineGap#*(Abs([Invert]-8)-1)))
 
 [MeasureAudio9]
 Measure=Plugin
@@ -148,8 +148,8 @@ Measure=Calc
 Meter=Roundline
 MeterStyle=MeterRoundline
 MeasureName=MeasureAudioMin9
-LineStart=(#RoundlineLength#*(Abs([Invert]-9)-1)+(#RoundlineGap#*(Abs([Invert]-9)-1)))
-LineLength=(#RoundlineLength#*Abs([Invert]-9)+(#RoundlineGap#*(Abs([Invert]-9)-1)))
+LineStart=(#CenterOffset#+(#RoundlineLength#*(Abs([Invert]-9)-1))+(#RoundlineGap#*(Abs([Invert]-9)-1)))
+LineLength=(#CenterOffset#+(#RoundlineLength#*Abs([Invert]-9))+(#RoundlineGap#*(Abs([Invert]-9)-1)))
 
 [MeasureAudio10]
 Measure=Plugin
@@ -165,8 +165,8 @@ Measure=Calc
 Meter=Roundline
 MeterStyle=MeterRoundline
 MeasureName=MeasureAudioMin10
-LineStart=(#RoundlineLength#*(Abs([Invert]-10)-1)+(#RoundlineGap#*(Abs([Invert]-10)-1)))
-LineLength=(#RoundlineLength#*Abs([Invert]-10)+(#RoundlineGap#*(Abs([Invert]-10)-1)))
+LineStart=(#CenterOffset#+(#RoundlineLength#*(Abs([Invert]-10)-1))+(#RoundlineGap#*(Abs([Invert]-10)-1)))
+LineLength=(#CenterOffset#+(#RoundlineLength#*Abs([Invert]-10))+(#RoundlineGap#*(Abs([Invert]-10)-1)))
 
 [MeasureAudio11]
 Measure=Plugin
@@ -182,8 +182,8 @@ Measure=Calc
 Meter=Roundline
 MeterStyle=MeterRoundline
 MeasureName=MeasureAudioMin11
-LineStart=(#RoundlineLength#*(Abs([Invert]-11)-1)+(#RoundlineGap#*(Abs([Invert]-11)-1)))
-LineLength=(#RoundlineLength#*Abs([Invert]-11)+(#RoundlineGap#*(Abs([Invert]-11)-1)))
+LineStart=(#CenterOffset#+(#RoundlineLength#*(Abs([Invert]-11)-1))+(#RoundlineGap#*(Abs([Invert]-11)-1)))
+LineLength=(#CenterOffset#+(#RoundlineLength#*Abs([Invert]-11))+(#RoundlineGap#*(Abs([Invert]-11)-1)))
 
 [MeasureAudio12]
 Measure=Plugin
@@ -199,8 +199,8 @@ Measure=Calc
 Meter=Roundline
 MeterStyle=MeterRoundline
 MeasureName=MeasureAudioMin12
-LineStart=(#RoundlineLength#*(Abs([Invert]-12)-1)+(#RoundlineGap#*(Abs([Invert]-12)-1)))
-LineLength=(#RoundlineLength#*Abs([Invert]-12)+(#RoundlineGap#*(Abs([Invert]-12)-1)))
+LineStart=(#CenterOffset#+(#RoundlineLength#*(Abs([Invert]-12)-1))+(#RoundlineGap#*(Abs([Invert]-12)-1)))
+LineLength=(#CenterOffset#+(#RoundlineLength#*Abs([Invert]-12))+(#RoundlineGap#*(Abs([Invert]-12)-1)))
 
 [MeasureAudio13]
 Measure=Plugin
@@ -216,8 +216,8 @@ Measure=Calc
 Meter=Roundline
 MeterStyle=MeterRoundline
 MeasureName=MeasureAudioMin13
-LineStart=(#RoundlineLength#*(Abs([Invert]-13)-1)+(#RoundlineGap#*(Abs([Invert]-13)-1)))
-LineLength=(#RoundlineLength#*Abs([Invert]-13)+(#RoundlineGap#*(Abs([Invert]-13)-1)))
+LineStart=(#CenterOffset#+(#RoundlineLength#*(Abs([Invert]-13)-1))+(#RoundlineGap#*(Abs([Invert]-13)-1)))
+LineLength=(#CenterOffset#+(#RoundlineLength#*Abs([Invert]-13))+(#RoundlineGap#*(Abs([Invert]-13)-1)))
 
 [MeasureAudio14]
 Measure=Plugin
@@ -233,8 +233,8 @@ Measure=Calc
 Meter=Roundline
 MeterStyle=MeterRoundline
 MeasureName=MeasureAudioMin14
-LineStart=(#RoundlineLength#*(Abs([Invert]-14)-1)+(#RoundlineGap#*(Abs([Invert]-14)-1)))
-LineLength=(#RoundlineLength#*Abs([Invert]-14)+(#RoundlineGap#*(Abs([Invert]-14)-1)))
+LineStart=(#CenterOffset#+(#RoundlineLength#*(Abs([Invert]-14)-1))+(#RoundlineGap#*(Abs([Invert]-14)-1)))
+LineLength=(#CenterOffset#+(#RoundlineLength#*Abs([Invert]-14))+(#RoundlineGap#*(Abs([Invert]-14)-1)))
 
 [MeasureAudio15]
 Measure=Plugin
@@ -250,8 +250,8 @@ Measure=Calc
 Meter=Roundline
 MeterStyle=MeterRoundline
 MeasureName=MeasureAudioMin15
-LineStart=(#RoundlineLength#*(Abs([Invert]-15)-1)+(#RoundlineGap#*(Abs([Invert]-15)-1)))
-LineLength=(#RoundlineLength#*Abs([Invert]-15)+(#RoundlineGap#*(Abs([Invert]-15)-1)))
+LineStart=(#CenterOffset#+(#RoundlineLength#*(Abs([Invert]-15)-1))+(#RoundlineGap#*(Abs([Invert]-15)-1)))
+LineLength=(#CenterOffset#+(#RoundlineLength#*Abs([Invert]-15))+(#RoundlineGap#*(Abs([Invert]-15)-1)))
 
 [MeasureAudio16]
 Measure=Plugin
@@ -267,8 +267,8 @@ Measure=Calc
 Meter=Roundline
 MeterStyle=MeterRoundline
 MeasureName=MeasureAudioMin16
-LineStart=(#RoundlineLength#*(Abs([Invert]-16)-1)+(#RoundlineGap#*(Abs([Invert]-16)-1)))
-LineLength=(#RoundlineLength#*Abs([Invert]-16)+(#RoundlineGap#*(Abs([Invert]-16)-1)))
+LineStart=(#CenterOffset#+(#RoundlineLength#*(Abs([Invert]-16)-1))+(#RoundlineGap#*(Abs([Invert]-16)-1)))
+LineLength=(#CenterOffset#+(#RoundlineLength#*Abs([Invert]-16))+(#RoundlineGap#*(Abs([Invert]-16)-1)))
 
 [MeasureAudio17]
 Measure=Plugin
@@ -284,8 +284,8 @@ Measure=Calc
 Meter=Roundline
 MeterStyle=MeterRoundline
 MeasureName=MeasureAudioMin17
-LineStart=(#RoundlineLength#*(Abs([Invert]-17)-1)+(#RoundlineGap#*(Abs([Invert]-17)-1)))
-LineLength=(#RoundlineLength#*Abs([Invert]-17)+(#RoundlineGap#*(Abs([Invert]-17)-1)))
+LineStart=(#CenterOffset#+(#RoundlineLength#*(Abs([Invert]-17)-1))+(#RoundlineGap#*(Abs([Invert]-17)-1)))
+LineLength=(#CenterOffset#+(#RoundlineLength#*Abs([Invert]-17))+(#RoundlineGap#*(Abs([Invert]-17)-1)))
 
 [MeasureAudio18]
 Measure=Plugin
@@ -301,8 +301,8 @@ Measure=Calc
 Meter=Roundline
 MeterStyle=MeterRoundline
 MeasureName=MeasureAudioMin18
-LineStart=(#RoundlineLength#*(Abs([Invert]-18)-1)+(#RoundlineGap#*(Abs([Invert]-18)-1)))
-LineLength=(#RoundlineLength#*Abs([Invert]-18)+(#RoundlineGap#*(Abs([Invert]-18)-1)))
+LineStart=(#CenterOffset#+(#RoundlineLength#*(Abs([Invert]-18)-1))+(#RoundlineGap#*(Abs([Invert]-18)-1)))
+LineLength=(#CenterOffset#+(#RoundlineLength#*Abs([Invert]-18))+(#RoundlineGap#*(Abs([Invert]-18)-1)))
 
 [MeasureAudio19]
 Measure=Plugin
@@ -318,8 +318,8 @@ Measure=Calc
 Meter=Roundline
 MeterStyle=MeterRoundline
 MeasureName=MeasureAudioMin19
-LineStart=(#RoundlineLength#*(Abs([Invert]-19)-1)+(#RoundlineGap#*(Abs([Invert]-19)-1)))
-LineLength=(#RoundlineLength#*Abs([Invert]-19)+(#RoundlineGap#*(Abs([Invert]-19)-1)))
+LineStart=(#CenterOffset#+(#RoundlineLength#*(Abs([Invert]-19)-1))+(#RoundlineGap#*(Abs([Invert]-19)-1)))
+LineLength=(#CenterOffset#+(#RoundlineLength#*Abs([Invert]-19))+(#RoundlineGap#*(Abs([Invert]-19)-1)))
 
 [MeasureAudio20]
 Measure=Plugin
@@ -335,8 +335,8 @@ Measure=Calc
 Meter=Roundline
 MeterStyle=MeterRoundline
 MeasureName=MeasureAudioMin20
-LineStart=(#RoundlineLength#*(Abs([Invert]-20)-1)+(#RoundlineGap#*(Abs([Invert]-20)-1)))
-LineLength=(#RoundlineLength#*Abs([Invert]-20)+(#RoundlineGap#*(Abs([Invert]-20)-1)))
+LineStart=(#CenterOffset#+(#RoundlineLength#*(Abs([Invert]-20)-1))+(#RoundlineGap#*(Abs([Invert]-20)-1)))
+LineLength=(#CenterOffset#+(#RoundlineLength#*Abs([Invert]-20))+(#RoundlineGap#*(Abs([Invert]-20)-1)))
 
 [MeasureAudio21]
 Measure=Plugin
@@ -352,8 +352,8 @@ Measure=Calc
 Meter=Roundline
 MeterStyle=MeterRoundline
 MeasureName=MeasureAudioMin21
-LineStart=(#RoundlineLength#*(Abs([Invert]-21)-1)+(#RoundlineGap#*(Abs([Invert]-21)-1)))
-LineLength=(#RoundlineLength#*Abs([Invert]-21)+(#RoundlineGap#*(Abs([Invert]-21)-1)))
+LineStart=(#CenterOffset#+(#RoundlineLength#*(Abs([Invert]-21)-1))+(#RoundlineGap#*(Abs([Invert]-21)-1)))
+LineLength=(#CenterOffset#+(#RoundlineLength#*Abs([Invert]-21))+(#RoundlineGap#*(Abs([Invert]-21)-1)))
 
 [MeasureAudio22]
 Measure=Plugin
@@ -369,8 +369,8 @@ Measure=Calc
 Meter=Roundline
 MeterStyle=MeterRoundline
 MeasureName=MeasureAudioMin22
-LineStart=(#RoundlineLength#*(Abs([Invert]-22)-1)+(#RoundlineGap#*(Abs([Invert]-22)-1)))
-LineLength=(#RoundlineLength#*Abs([Invert]-22)+(#RoundlineGap#*(Abs([Invert]-22)-1)))
+LineStart=(#CenterOffset#+(#RoundlineLength#*(Abs([Invert]-22)-1))+(#RoundlineGap#*(Abs([Invert]-22)-1)))
+LineLength=(#CenterOffset#+(#RoundlineLength#*Abs([Invert]-22))+(#RoundlineGap#*(Abs([Invert]-22)-1)))
 
 [MeasureAudio23]
 Measure=Plugin
@@ -386,5 +386,5 @@ Measure=Calc
 Meter=Roundline
 MeterStyle=MeterRoundline
 MeasureName=MeasureAudioMin23
-LineStart=(#RoundlineLength#*(Abs([Invert]-23)-1)+(#RoundlineGap#*(Abs([Invert]-23)-1)))
-LineLength=(#RoundlineLength#*Abs([Invert]-23)+(#RoundlineGap#*(Abs([Invert]-23)-1)))
+LineStart=(#CenterOffset#+(#RoundlineLength#*(Abs([Invert]-23)-1))+(#RoundlineGap#*(Abs([Invert]-23)-1)))
+LineLength=(#CenterOffset#+(#RoundlineLength#*Abs([Invert]-23))+(#RoundlineGap#*(Abs([Invert]-23)-1)))

@@ -15,6 +15,7 @@ Sensitivity=42
 
 RoundlineLength=8
 RoundlineGap=4
+CenterOffset=0
 Color=161,186,220,255
 
 Direction=Random
