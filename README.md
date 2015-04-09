@@ -1,5 +1,6 @@
 You can change the distance from the center of the eye, number of roundlines, color, length and gap (spectrum size), rotation speed and direction, as well as the angle fill size through the "Edit variables" context menu option
 
+When launching the skin for the first time, the number of roundlines is automatically adjusted based on your computer's CPU usage
 
 If you get tired sometimes, it's OK to take a break!
 
