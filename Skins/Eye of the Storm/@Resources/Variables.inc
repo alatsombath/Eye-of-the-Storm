@@ -1,74 +1,59 @@
 [Variables]
 
-; Refresh the skin after updating these settings!
+Bands=9
+; Number of arcs - Activate Eye of the Storm\GenerateBands.ini skin after changing this value
 
+Color=128,128,128
 
-; DISPLAY
-; =======
-
-Bands=24
-; Number of roundlines
-
-RoundlineLength=8
-; Technically the "width" of the line
-
+RoundlineLength=12
 RoundlineGap=4
 
 CenterOffset=0
 ; Distance from the center of the eye
 
-Color=161,186,220,255
+Multiplier=35
+; Arc rotation speed
 
+Constant=5
+; Arc rotation speed when no sound is playing
 
-; MECHANICS
-; =========
+InnerMinAngle=0
+; Determines minimum inner arc length
+OuterMinAngle=180
+; Determines minimum outer arc length
 
+InnerMaxAngle=360
+; Determines maximum inner arc length
+OuterMaxAngle=0
+; Determines maximum outer arc length
+
+AverageSize=0
+; Average sound levels over time to provide continuity
+
+LoudnessEqualization=1
+; Increases visibility for quiet audio sources when applicable
+
+FFTSize=10240
+FFTOverlap="(#FFTSize#-512)"
+FFTAttack=0
+FFTDecay=0
+FreqMin=20
+FreqMax=20000
+Sensitivity=18
+; http://docs.rainmeter.net/manual-beta/plugins/audiolevel
+
+MusicPlayer=None
+; Music player process name
+
+FirstBandIndex=1
+
+; Environment variables for settings window
+SkinGroup=EyeoftheStorm
+Config=Eye of the Storm
+ConfigPath=#ROOTCONFIGPATH##Config#.ini
+WriteVariable=Color
 Direction=Random
-; Direction=Clockwise
-; Direction=CounterClockwise
-
-InvertSpectrum=0
-; 0 = Bass inside, treble outside
-; 1 = Treble inside, bass outside
-
-Constant=0.005
-; Band rotation speed when no sound is playing
-Sustain=0.3
-; Band rotation speed when sound level is the same
-Attack=0.6
-; Band angle change intensity when sound level jumps
-
-AverageSustain=0.1
-; Spectrum rotation speed when treble sound level is the same
-AverageAttack=0.2
-; Spectrum angle change intensity when bass sound level jumps
-
-AngleFillMinLowFreq=(Rad(0))
-; Minimum angle size on no sound for lowest frequency
-AngleFillMinHighFreq=(Rad(180))
-; Minimum angle size on no sound for highest frequency
-
-AngleFillMaxLowFreq=(Rad(360))
-; Maximum angle size on loudest sound for lowest frequency
-AngleFillMaxHighFreq=(Rad(180))
-; Maximum angle size on loudest sound for highest frequency
-
-
-; AUDIO
-; =====
-
-Sensitivity=42
-; Increase this if the spectrum is not visible enough
-
-FFTAttack=350
-FFTDecay=350
-; Decrease for faster response, increase for slower response
-; http://docs.rainmeter.net/manual-beta/plugins/audiolevel#FFTAttack
-
-FFTSize=2048
-FFTOverlap=(#FFTSize#/2)
-FreqMin=40
-FreqMax=16000
+Invert=0
+Channel=Avg
 Port=Output
-; Additional audio settings
-; http://docs.rainmeter.net/manual-beta/plugins/audiolevel#FFTOptions
+ID=
